@@ -12,7 +12,11 @@
   <menu id="client-list-menu" />
   <separator />
 
-  <item label="xterm">
+  <item label="JMeter">
+    <action name="Execute"><execute>/opt/jmeter/bin/jmeter</execute></action>
+  </item>
+  <separator />
+  <item label="Terminal">
     <action name="Execute"><execute>/usr/bin/xfce4-terminal</execute></action>
   </item>
   <separator />

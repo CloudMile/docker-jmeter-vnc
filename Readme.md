@@ -1,18 +1,13 @@
 # About
-x11vnc on alpine linux
+JMeter with WebSocket Samplers and x11vnc on alpine linux
 
 # Usage
 
-docker run -d -p 5900:5900 danielguerra/alpine-vnc
+docker run -d -p 5900:5900 coolersport/jmeter
 
-After this use vnc-client to connect to your alpine.
-Right click shows the menu
+After this use vnc-client to connect to your container.
+Right click shows the menu, then select JMeter to run.
 
 Every runs as user alpine. This user has sudo rights.
-The password=alpine you can change is with passwd in
-the xterm.
-
-Default it runs alpine 3.5 (changed). If you want to
-use alpine 3.4 run
-
-docker run -d -p 5900:5900 danielguerra/alpine-vnc:3.4
+Password is set to random for security. Let me know your
+use case if it needs to be manually set.

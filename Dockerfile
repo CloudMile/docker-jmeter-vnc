@@ -21,7 +21,7 @@ RUN cp /apk/.abuild/-58b83ac3.rsa.pub /etc/apk/keys \
 && rm -rf apache-jmeter-3.2.tgz \
 && ln -s /opt/jmeter/bin/jmeter /usr/bin/jmeter \
 # add websocket sampler
-&& curl -fsSL https://bitbucket.org/coolersport/jmeter-websocket-samplers/downloads/JMeterWebSocketSamplers-0.10-20170905.jar -o /opt/jmeter/lib/ext/JMeterWebSocketSamplers-0.10-20170905.jar \
+&& curl -fsSL https://bitbucket.org/coolersport/jmeter-websocket-samplers/downloads/JMeterWebSocketSamplers-0.10-20170908.jar -o /opt/jmeter/lib/ext/JMeterWebSocketSamplers-0.10-20170908.jar \
 # add minimal-json library
 && curl -fsSL https://github.com/ralfstx/minimal-json/releases/download/0.9.4/minimal-json-0.9.4.jar -o /opt/jmeter/lib/ext/minimal-json-0.9.4.jar \
 # upgrade groovy

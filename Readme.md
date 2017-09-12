@@ -5,7 +5,7 @@ JMeter with WebSocket Samplers and x11vnc on alpine linux
 
     docker run -v path/to/your/tests:/home/alpine/tests -d -p 5900:5900 coolersport/jmeter
 
-After this use vnc-client to connect to your container.
+After this use a vnc-client (e.g. [RealVNC viewer](https://www.realvnc.com/en/connect/download/viewer/)) to connect to your container.
 Right click shows the menu, then select JMeter to run.
 
 Every runs as user alpine. This user has sudo rights.

@@ -6,7 +6,7 @@ ADD /apk /apk
 
 RUN cp /apk/.abuild/-58b83ac3.rsa.pub /etc/apk/keys \
 && apk --no-cache --update add /apk/x11vnc-0.9.13-r0.apk \
-&& apk --no-cache add xvfb openbox xfce4-terminal supervisor sudo tar curl \
+&& apk --no-cache add openssl xvfb openbox xfce4-terminal supervisor sudo tar curl \
 # add alpine user with random password
 && addgroup alpine \
 && adduser  -G alpine -s /bin/sh -D alpine \
@@ -32,6 +32,8 @@ ADD etc /etc
 
 WORKDIR /home/alpine
 USER alpine
+
+ENV RESOLUTION 1280x720x24
 
 EXPOSE 5900
 
